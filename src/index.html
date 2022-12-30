@@ -171,32 +171,208 @@
 
           </div>
         </div>
-        <div class="commit-cointainer bg-blue-100 rounded border-gray-300 border mt-2">
-          <div class="commit-header flex justify-between items-center px-2 text-xs">
-            <div class="commit-avatar flex space-x-2 py-3 border-gray-300 border-b">
-              <img class="w-4 h-4 rounded-full" src="https://media.npr.org/assets/img/2022/06/11/ap22162005335669_custom-37661a47a9d3eea6a99596d3dd0be97244353b90-s1100-c50.jpg" alt="">
-              <span class="">Adamwathan</span>
-              <span class="">1.5.1</span>
-            </div>
-            <div class="commit-info flex items-center space-x-3 text-xs text-gray-700">
-              <span class="text-gray-400">
-                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              </span>
-              <span>dgw12354</span>
-              <span>6 days ago</span>
-              <span class="flex items-center">
-                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                 3,040 commits</span>
-            </div>
+        
+        <div class="commit-history-top border-blue-300 border rounded rounded-b-none mt-2 border-b-0 bg-sky-100
+          flex justify-between items-center px-4 py-2 text-sm">
+          <div class="avatar flex space-x-2 items-center">
+            <img class="w-4 h-4 rounded-full" src="data:image/jpeg;base64,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" alt="">
+            <span class="font-semibold">Alexander</span>
+          </div>
+          <div class="commit-statistics text-gray-600 flex items-center space-x-3">
+            <svg class="w-3 h-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                </svg>
+                <span class="">d34kk234</span>
+                <span class="">4 days ago</span>
+                <a href="" class="flex items-center">
+                  <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+</svg>
+<span class="text-gray-800">302</span>
+<span>commits</span>
+                </a>
           </div>
         </div>
+
+        <div class="commit-history-files flex justify-between px-3 text-sm py-1 border border-gray-300 border-t-0">
+          <span class="flex items-center space-x-1">
+            <svg class="w-4 h-4 text-blue-700" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9.776c.112-.017.227-.026.344-.026h15.812c.117 0 .232.009.344.026m-16.5 0a2.25 2.25 0 00-1.883 2.542l.857 6a2.25 2.25 0 002.227 1.932H19.05a2.25 2.25 0 002.227-1.932l.857-6a2.25 2.25 0 00-1.883-2.542m-16.5 0V6A2.25 2.25 0 016 3.75h3.879a1.5 1.5 0 011.06.44l2.122 2.12a1.5 1.5 0 001.06.44H18A2.25 2.25 0 0120.25 9v.776" />
+</svg>
+<span>public</span>
+</span>
+          <span>Update issue template</span>
+          <span>13 days ago</span>
+        </div>
+
+                <div class="commit-history-files flex justify-between px-3 text-sm py-1 border border-gray-300 border-t-0">
+          <span class="flex items-center space-x-1">
+            <svg class="w-4 h-4 text-blue-700" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9.776c.112-.017.227-.026.344-.026h15.812c.117 0 .232.009.344.026m-16.5 0a2.25 2.25 0 00-1.883 2.542l.857 6a2.25 2.25 0 002.227 1.932H19.05a2.25 2.25 0 002.227-1.932l.857-6a2.25 2.25 0 00-1.883-2.542m-16.5 0V6A2.25 2.25 0 016 3.75h3.879a1.5 1.5 0 011.06.44l2.122 2.12a1.5 1.5 0 001.06.44H18A2.25 2.25 0 0120.25 9v.776" />
+</svg>
+<span>public</span>
+</span>
+          <span>Update issue template</span>
+          <span>13 days ago</span>
+        </div>
+                <div class="commit-history-files flex justify-between px-3 text-sm py-1 border border-gray-300 border-t-0">
+          <span class="flex items-center space-x-1">
+            <svg class="w-4 h-4 text-blue-700" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9.776c.112-.017.227-.026.344-.026h15.812c.117 0 .232.009.344.026m-16.5 0a2.25 2.25 0 00-1.883 2.542l.857 6a2.25 2.25 0 002.227 1.932H19.05a2.25 2.25 0 002.227-1.932l.857-6a2.25 2.25 0 00-1.883-2.542m-16.5 0V6A2.25 2.25 0 016 3.75h3.879a1.5 1.5 0 011.06.44l2.122 2.12a1.5 1.5 0 001.06.44H18A2.25 2.25 0 0120.25 9v.776" />
+</svg>
+<span>public</span>
+</span>
+          <span>Update issue template</span>
+          <span>13 days ago</span>
+        </div>
+                <div class="commit-history-files flex justify-between px-3 text-sm py-1 border border-gray-300 border-t-0">
+          <span class="flex items-center space-x-1">
+            <svg class="w-4 h-4 text-blue-700" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9.776c.112-.017.227-.026.344-.026h15.812c.117 0 .232.009.344.026m-16.5 0a2.25 2.25 0 00-1.883 2.542l.857 6a2.25 2.25 0 002.227 1.932H19.05a2.25 2.25 0 002.227-1.932l.857-6a2.25 2.25 0 00-1.883-2.542m-16.5 0V6A2.25 2.25 0 016 3.75h3.879a1.5 1.5 0 011.06.44l2.122 2.12a1.5 1.5 0 001.06.44H18A2.25 2.25 0 0120.25 9v.776" />
+</svg>
+<span>public</span>
+</span>
+          <span>Update issue template</span>
+          <span>13 days ago</span>
+        </div>
+                <div class="commit-history-files flex justify-between px-3 text-sm py-1 border border-gray-300 border-t-0">
+          <span class="flex items-center space-x-1">
+            <svg class="w-4 h-4 text-blue-700" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9.776c.112-.017.227-.026.344-.026h15.812c.117 0 .232.009.344.026m-16.5 0a2.25 2.25 0 00-1.883 2.542l.857 6a2.25 2.25 0 002.227 1.932H19.05a2.25 2.25 0 002.227-1.932l.857-6a2.25 2.25 0 00-1.883-2.542m-16.5 0V6A2.25 2.25 0 016 3.75h3.879a1.5 1.5 0 011.06.44l2.122 2.12a1.5 1.5 0 001.06.44H18A2.25 2.25 0 0120.25 9v.776" />
+</svg>
+<span>public</span>
+</span>
+          <span>Update issue template</span>
+          <span>13 days ago</span>
+        </div>
+                <div class="commit-history-files flex justify-between px-3 text-sm py-1 border border-gray-300 border-t-0">
+          <span class="flex items-center space-x-1">
+            <svg class="w-4 h-4 text-blue-700" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9.776c.112-.017.227-.026.344-.026h15.812c.117 0 .232.009.344.026m-16.5 0a2.25 2.25 0 00-1.883 2.542l.857 6a2.25 2.25 0 002.227 1.932H19.05a2.25 2.25 0 002.227-1.932l.857-6a2.25 2.25 0 00-1.883-2.542m-16.5 0V6A2.25 2.25 0 016 3.75h3.879a1.5 1.5 0 011.06.44l2.122 2.12a1.5 1.5 0 001.06.44H18A2.25 2.25 0 0120.25 9v.776" />
+</svg>
+<span>public</span>
+</span>
+          <span>Update issue template</span>
+          <span>13 days ago</span>
+        </div>
+                <div class="commit-history-files flex justify-between px-3 text-sm py-1 border border-gray-300 border-t-0">
+          <span class="flex items-center space-x-1">
+            <svg class="w-4 h-4 text-blue-700" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9.776c.112-.017.227-.026.344-.026h15.812c.117 0 .232.009.344.026m-16.5 0a2.25 2.25 0 00-1.883 2.542l.857 6a2.25 2.25 0 002.227 1.932H19.05a2.25 2.25 0 002.227-1.932l.857-6a2.25 2.25 0 00-1.883-2.542m-16.5 0V6A2.25 2.25 0 016 3.75h3.879a1.5 1.5 0 011.06.44l2.122 2.12a1.5 1.5 0 001.06.44H18A2.25 2.25 0 0120.25 9v.776" />
+</svg>
+<span>public</span>
+</span>
+          <span>Update issue template</span>
+          <span>13 days ago</span>
+        </div>
+                <div class="commit-history-files flex justify-between px-3 text-sm py-1 border border-gray-300 border-t-0">
+          <span class="flex items-center space-x-1">
+            <svg class="w-4 h-4 text-blue-700" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9.776c.112-.017.227-.026.344-.026h15.812c.117 0 .232.009.344.026m-16.5 0a2.25 2.25 0 00-1.883 2.542l.857 6a2.25 2.25 0 002.227 1.932H19.05a2.25 2.25 0 002.227-1.932l.857-6a2.25 2.25 0 00-1.883-2.542m-16.5 0V6A2.25 2.25 0 016 3.75h3.879a1.5 1.5 0 011.06.44l2.122 2.12a1.5 1.5 0 001.06.44H18A2.25 2.25 0 0120.25 9v.776" />
+</svg>
+<span>public</span>
+</span>
+          <span>Update issue template</span>
+          <span>13 days ago</span>
+        </div>
+                <div class="commit-history-files flex justify-between px-3 text-sm py-1 border border-gray-300 border-t-0">
+          <span class="flex items-center space-x-1">
+            <svg class="w-4 h-4 text-blue-700" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9.776c.112-.017.227-.026.344-.026h15.812c.117 0 .232.009.344.026m-16.5 0a2.25 2.25 0 00-1.883 2.542l.857 6a2.25 2.25 0 002.227 1.932H19.05a2.25 2.25 0 002.227-1.932l.857-6a2.25 2.25 0 00-1.883-2.542m-16.5 0V6A2.25 2.25 0 016 3.75h3.879a1.5 1.5 0 011.06.44l2.122 2.12a1.5 1.5 0 001.06.44H18A2.25 2.25 0 0120.25 9v.776" />
+</svg>
+<span>public</span>
+</span>
+          <span>Update issue template</span>
+          <span>13 days ago</span>
+        </div>
+                <div class="commit-history-files flex justify-between px-3 text-sm py-1 border border-gray-300 border-t-0">
+          <span class="flex items-center space-x-1">
+            <svg class="w-4 h-4 text-blue-700" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9.776c.112-.017.227-.026.344-.026h15.812c.117 0 .232.009.344.026m-16.5 0a2.25 2.25 0 00-1.883 2.542l.857 6a2.25 2.25 0 002.227 1.932H19.05a2.25 2.25 0 002.227-1.932l.857-6a2.25 2.25 0 00-1.883-2.542m-16.5 0V6A2.25 2.25 0 016 3.75h3.879a1.5 1.5 0 011.06.44l2.122 2.12a1.5 1.5 0 001.06.44H18A2.25 2.25 0 0120.25 9v.776" />
+</svg>
+<span>public</span>
+</span>
+          <span>Update issue template</span>
+          <span>13 days ago</span>
+        </div>
+                <div class="commit-history-files flex justify-between px-3 text-sm py-1 border border-gray-300 border-t-0">
+          <span class="flex items-center space-x-1">
+            <svg class="w-4 h-4 text-blue-700" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9.776c.112-.017.227-.026.344-.026h15.812c.117 0 .232.009.344.026m-16.5 0a2.25 2.25 0 00-1.883 2.542l.857 6a2.25 2.25 0 002.227 1.932H19.05a2.25 2.25 0 002.227-1.932l.857-6a2.25 2.25 0 00-1.883-2.542m-16.5 0V6A2.25 2.25 0 016 3.75h3.879a1.5 1.5 0 011.06.44l2.122 2.12a1.5 1.5 0 001.06.44H18A2.25 2.25 0 0120.25 9v.776" />
+</svg>
+<span>public</span>
+</span>
+          <span>Update issue template</span>
+          <span>13 days ago</span>
+        </div>
+                <div class="commit-history-files flex justify-between px-3 text-sm py-1 border border-gray-300 border-t-0">
+          <span class="flex items-center space-x-1">
+            <svg class="w-4 h-4 text-blue-700" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9.776c.112-.017.227-.026.344-.026h15.812c.117 0 .232.009.344.026m-16.5 0a2.25 2.25 0 00-1.883 2.542l.857 6a2.25 2.25 0 002.227 1.932H19.05a2.25 2.25 0 002.227-1.932l.857-6a2.25 2.25 0 00-1.883-2.542m-16.5 0V6A2.25 2.25 0 016 3.75h3.879a1.5 1.5 0 011.06.44l2.122 2.12a1.5 1.5 0 001.06.44H18A2.25 2.25 0 0120.25 9v.776" />
+</svg>
+<span>public</span>
+</span>
+          <span>Update issue template</span>
+          <span>13 days ago</span>
+        </div>
+                <div class="commit-history-files flex justify-between px-3 text-sm py-1 border border-gray-300 border-t-0">
+          <span class="flex items-center space-x-1">
+            <svg class="w-4 h-4 text-blue-700" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9.776c.112-.017.227-.026.344-.026h15.812c.117 0 .232.009.344.026m-16.5 0a2.25 2.25 0 00-1.883 2.542l.857 6a2.25 2.25 0 002.227 1.932H19.05a2.25 2.25 0 002.227-1.932l.857-6a2.25 2.25 0 00-1.883-2.542m-16.5 0V6A2.25 2.25 0 016 3.75h3.879a1.5 1.5 0 011.06.44l2.122 2.12a1.5 1.5 0 001.06.44H18A2.25 2.25 0 0120.25 9v.776" />
+</svg>
+<span>public</span>
+</span>
+          <span>Update issue template</span>
+          <span>13 days ago</span>
+        </div>
+
+                <div class="commit-history-files flex justify-between px-3 text-sm py-1 border border-gray-300 border-t-0">
+          <span class="flex items-center space-x-1">
+            <svg class="w-4 h-4 text-blue-700" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9.776c.112-.017.227-.026.344-.026h15.812c.117 0 .232.009.344.026m-16.5 0a2.25 2.25 0 00-1.883 2.542l.857 6a2.25 2.25 0 002.227 1.932H19.05a2.25 2.25 0 002.227-1.932l.857-6a2.25 2.25 0 00-1.883-2.542m-16.5 0V6A2.25 2.25 0 016 3.75h3.879a1.5 1.5 0 011.06.44l2.122 2.12a1.5 1.5 0 001.06.44H18A2.25 2.25 0 0120.25 9v.776" />
+</svg>
+<span>public</span>
+</span>
+          <span>Update issue template</span>
+          <span>13 days ago</span>
+        </div>
+
+        <div class="readme rounded border border-blue-600 bg-blue-200 px-4 py-4 mt-4">
+          <h3 class="">ReadMe.md</h3>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt tempore numquam quidem voluptatibus, reprehenderit suscipit quos vitae modi incidunt, exercitationem vel voluptates perferendis praesentium repellendus quas, repudiandae tenetur et ipsa!
+        </div>
+
       </div><!--end of file explorer-->
 
       <div class="sidebar w-1/4">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque unde ratione excepturi nostrum voluptatem, similique ad repudiandae necessitatibus? Saepe pariatur, sit cupiditate laborum eveniet temporibus voluptatum optio quod ipsum sunt.
-      </div><!--end of sidebar-->
+      </div><!--end of sidebar-->      
       
+    </div>
+
+    <div class="footer mx-12 text-sm border-t border-gray-200 py-5 px-2 flex items-center">
+      <ul class="flex items-center space-x-12">
+        <li>2020 Github,inc</li>
+        <li><a href="" class="text-blue-700">Terms</a></li>
+        <li><a href="" class="text-blue-700">privacy</a></li>
+        <li><a href="" class="text-blue-700">Security</a></li>
+        <li><a href="" class="text-blue-700">Status</a></li>
+        <li><a href="" class="text-blue-700">Help</a></li>
+        
+      </ul>
+      <div class="mx-12"></div>
+            <ul class="flex items-center space-x-12">
+        <li>2020 Github,inc</li>
+        <li><a href="" class="text-blue-700">Terms</a></li>
+        <li><a href="" class="text-blue-700">privacy</a></li>
+        <li><a href="" class="text-blue-700">Security</a></li>
+        <li><a href="" class="text-blue-700">Status</a></li>
+        <li><a href="" class="text-blue-700">Help</a></li>
+        
+      </ul>
     </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
+
+
